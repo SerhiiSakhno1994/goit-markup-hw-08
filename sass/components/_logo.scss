@@ -1,0 +1,10 @@
+.logo {
+  @include font(
+    var(--text-style-rel),
+    700,
+    26px,
+    1.19,
+    null,
+    var(--accent-color)
+  );
+}

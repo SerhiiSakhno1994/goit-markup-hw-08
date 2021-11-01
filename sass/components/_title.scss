@@ -1,0 +1,8 @@
+.title {
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 1.16;
+  // color: var(--secondary-title-color);
+  text-align: center;
+  @include font(null, 700, 36px, 1.16, null, var(--secondary-title-color));
+}
