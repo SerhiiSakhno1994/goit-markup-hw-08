@@ -1,30 +1,40 @@
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
-  margin: 0;
-  padding: 0;
-  padding-inline-start: 0;
-
-  // display: flex;
-  // justify-content: center;
-  @include flex(flex, null, center, null, null);
-}
-.clients__item {
   display: flex;
   flex-wrap: wrap;
-  @include flex(flex, null, null, null, wrap);
 
-  margin-right: 30px;
-  &:last-child {
-    margin-right: 0;
+  margin: -15px;
+  padding: 0;
+}
+.clients__item {
+  margin: 15px;
+  width: calc((100% - 60px) / 2);
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 90px) / 3);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 
 .clients__link {
   @include flex(flex, center, center, null, null);
-  width: 170px;
+  // width: 170px;
   height: 92px;
   color: var(--cliets-color);
   border: 1px solid var(--cliets-color);

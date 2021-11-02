@@ -1,6 +1,10 @@
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio-btn {
@@ -54,7 +58,13 @@
 .portfolio-button-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  @media (min-width: 768px) {
+    justify-content: center;
+  }
+  @media (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 .portfolio-item {
   margin-left: 8px;
@@ -68,18 +78,37 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
+  @media (min-width: 768px) and (max-width: 1199px) {
+    flex-grow: 1;
+  }
 }
 
 .portfolio-work {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: -15px;
+  }
 }
 .portfolio-work-list {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
 }
 
 .portfolio-work-link {
@@ -97,8 +126,11 @@
   &:focus .portfolio-overlay {
     transform: translateY(0);
   }
+  @media (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
-
 .portfolio-top-wrapper {
   position: relative;
   overflow: hidden;
@@ -120,6 +152,12 @@
   font-size: 18px;
   line-height: 1.555;
   letter-spacing: 0.03em;
+  @media (max-width: 480px) {
+    padding-top: 10px;
+    overflow-y: scroll;
+    align-items: flex-start;
+    justify-content: center;
+  }
 }
 .portfolio-top-text {
   text-align: left;

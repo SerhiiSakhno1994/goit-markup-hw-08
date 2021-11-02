@@ -1,19 +1,37 @@
-.signup {
-  margin-left: auto;
+.signup__title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  @media (min-width: 1200px) {
+    justify-content: left;
+  }
+}
+
+.signup__form {
+  text-align: center;
+  @media (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .signup__label {
-  margin-right: 12px;
+  display: block;
+  margin-bottom: 20px;
+
+  @media (min-width: 1200px) {
+    width: 358px;
+    margin-bottom: 0;
+    margin-right: 12px;
+  }
 }
 
-.signup__title {
-  @include flex(flex, null, left, null, null);
-}
 .signup__email {
   padding: 15px 16px;
 
   height: 50px;
-  width: 358px;
+  width: 100%;
+  max-width: 450px;
 
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -24,25 +42,28 @@
   color: var(--primery-title-color);
 }
 
-.signup__form {
-  display: flex;
-}
-
 .signup__btn {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  text-align: center;
+
   padding: 10px 27px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
 
-  @include font(null, 700, 16px, 1.87, 0.06em, var(--primery-title-color));
+  letter-spacing: 0.06em;
 
-  @include flex(flex, center, center, null, null);
-
-  background-color: var(--accent-color);
+  color: var(--primery-title-color);
   &:focus,
   &:hover {
     color: var(--primery-title-color);
   }
 }
 
-.signup__btn_margin {
+.signup__btn--margin {
   margin-right: 10px;
 }
 

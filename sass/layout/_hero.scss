@@ -1,4 +1,16 @@
 .hero {
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--hero-background-color);
+
+  @media (min-width: 768px) {
+    height: 600px;
+  }
+}
+
+.hero__conteiner {
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -14,12 +26,16 @@
 }
 
 .hero__title {
-  max-width: 696px;
+  max-width: 360px;
   margin: 0 auto;
-  margin-bottom: 50px;
-  @include font(null, 900, 44px, 1.36, null, var(--primery-title-color));
+  margin-bottom: 30px;
+  @include font(null, 900, 26px, 1.61, 0.06em, var(--primery-title-color));
   text-align: center;
   text-transform: uppercase;
+  @media (min-width: 1200px) {
+    max-width: 696px;
+    @include font(null, 900, 44px, 1.36, 0.06em, var(--primery-title-color));
+  }
 }
 
 .hero__btn {
