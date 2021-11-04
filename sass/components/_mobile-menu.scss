@@ -23,7 +23,7 @@
   }
 }
 
-.nav__button.nav__button--open {
+.nav__button.nav__button_open {
   position: static;
 }
 
@@ -77,7 +77,7 @@
   color: var(--secondary-title-color);
 }
 
-.mobile-menu__link--curent {
+.mobile-menu__link_curent {
   color: var(--accent-color);
 }
 
@@ -102,7 +102,7 @@
   color: var(--primery-text-color);
 }
 
-.mobile-contacts__link--tel {
+.mobile-contacts__link_tel {
   font-size: 7vw;
   line-height: 1.175;
 
