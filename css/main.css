@@ -558,7 +558,7 @@ body {
   justify-content: center;
   margin-bottom: 30px;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
@@ -829,7 +829,7 @@ body {
 
 @media (min-width: 1200px) {
   .hero__conteiner {
-    background-size: 1600px 600px;
+    background-size: 1600px 400px;
     max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
   }
@@ -961,6 +961,12 @@ body {
 @media screen and (max-width: 768px) {
   .unique__title {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .unique__title {
+    text-align: left;
   }
 }
 
@@ -1250,10 +1256,6 @@ body {
   .wraper {
     margin-bottom: 0;
   }
-}
-
-.footer__item:not(:first-child) {
-  margin-top: 9px;
 }
 
 .footer__contact {

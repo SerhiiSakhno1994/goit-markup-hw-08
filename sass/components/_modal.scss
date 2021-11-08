@@ -172,7 +172,7 @@
 .form-checkbox-label {
   @include flex(flex, center, center, null, null);
   margin-bottom: 30px;
-  @include font(null, 400, 12px, 1.16, 0.03em, var(--primery-text-color));
+  @include font(null, 400, 11px, 1.16, 0.03em, var(--primery-text-color));
   @media (min-width: 1200px) {
     @include font(null, 400, 14px, 1.71, 0.03em, var(--primery-text-color));
   }
