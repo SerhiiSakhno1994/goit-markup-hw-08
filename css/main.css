@@ -615,7 +615,7 @@ body {
   align-items: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .header__conteiner {
     max-width: 480px;
     align-items: center;
@@ -637,7 +637,7 @@ body {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767.98px) {
   .nav__notmobile {
     display: none;
   }
@@ -834,7 +834,7 @@ body {
 
 @media (min-width: 1200px) {
   .hero__conteiner {
-    background-size: 1600px 400px;
+    background-size: 1600px 600px;
     max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
   }
